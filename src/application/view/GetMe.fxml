@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" stylesheets="@../control/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.Control">
+   <children>
+        <BorderPane layoutX="40.0" layoutY="21.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+           <AnchorPane prefHeight="80.0" prefWidth="500.0" styleClass="backSup" stylesheets="@../control/application.css" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <Pane layoutX="562.0" layoutY="53.0" prefHeight="410.0" prefWidth="290.0" style="-fx-background-color: FFFDFA; -fx-background-radius: 50px;">
+         <children>
+            <JFXButton layoutX="51.0" layoutY="301.0" prefHeight="25.0" prefWidth="189.0" text="Forgot your password?" underline="true" />
+            <JFXTextField layoutX="78.0" layoutY="135.0" promptText="Username" />
+            <JFXPasswordField layoutX="78.0" layoutY="180.0" promptText="Password" />
+            <JFXButton layoutX="20.0" layoutY="248.0" style="-fx-border-color: black;" text="Get Started">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="88.0" fitWidth="109.0" layoutX="101.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/profilephoto.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnCerrar" layoutX="155.0" layoutY="248.0" onAction="#closeStage" prefHeight="41.0" prefWidth="116.0" style="-fx-border-color: black;" text="Get Out">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
